@@ -1,5 +1,12 @@
 #include "iostream"
-int main(){
-  std::cout << "Hello World." << std::endl;
-  return 0;
-}
+#include "string"
+using namespace std;
+class helloWorld{
+  private:
+    string greetings = "Hello World.";
+  public:
+    helloWorld(){}
+    string disp(){
+      return greetings;
+    }
+};
