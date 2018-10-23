@@ -1,12 +1,11 @@
+#define _GLIBCXX_USE_CXX11_ABI 0
+#include "headers/helloWorld.h"
 #include "iostream"
 #include "string"
 using namespace std;
-class helloWorld{
-  private:
-    string greetings = "Hello World.";
-  public:
-    helloWorld(){}
-    string disp(){
-      return greetings;
-    }
-};
+      std::string::greetings = "Hello World.";
+      helloWorld::helloWorld(){}
+      string helloWorld::disp(){
+      return helloWorld std::string::greetings;
+      }
+

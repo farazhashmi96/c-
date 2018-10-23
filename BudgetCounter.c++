@@ -15,6 +15,13 @@ class BudgetCounter{ // C++ Custom Class Defined.
       Internet = Outing = Grooming = months = income = expense = savings = totalExpense = 0.00;
       totalIncome = totalSavings = 0.00;
     }
+  void intrestingFact(){
+    cout << "Watch your thoughts, they become words." << endl;
+    cout << "Watch your words, they become actions." << endl;
+    cout << "Watch your actions, they become habits." << endl;
+    cout << "Watch your habits, they become your character." << endl;
+    cout << "Watch your character, it becomes your destiny." << endl;
+  }
   void getInput(){
     cout << "Enter amount in per \"1\" month format: " << endl; // Prints simple instruction for user.
     cout << "Enter Internet Price: " << endl; cin >> Internet; // Asks for Internet Price from user.

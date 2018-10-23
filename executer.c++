@@ -32,7 +32,8 @@ void executer(short enterNumber = 0){
       }
     case 3:{
       BudgetCounter cB;
-      cB.cAlculate();
+      // cB.cAlculate();
+      cB.intrestingFact();
       break;
       }
     default:{

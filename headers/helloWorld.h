@@ -1,3 +1,6 @@
+#ifndef helloWorld_H
+#define helloWorld_H
+
 #include "iostream"
 #include "string"
 using namespace std;
@@ -6,3 +9,4 @@ class helloWorld{
     helloWorld();
     string disp();
 };
+#endif
