@@ -1,9 +1,12 @@
 /** Simple Starter Main File. **/
 #include "iostream" // C++ preprocessor to include the iostream standard file.
 #include "string" // Strings header introduces string types, character traits and a set of converting functions
+/**
 #include "helloWorld.c++"
 #include "currencyConverter.c++"
 #include "BudgetCounter.c++"
+**/
+#include "cashCounter.c++"
 using namespace std; // C++ standard namespace for input and output alike.
 void executer();
 void wantContinue();
@@ -18,6 +21,7 @@ int main(){ // Main Function For C++ Programming.
 void executer(short enterNumber = 0){
   short getEnteredNumber = enterNumber;
   switch(getEnteredNumber){
+/**
     case 1:{
       helloWorld Hw; cout << Hw.disp() << endl;
       break;
@@ -36,6 +40,12 @@ void executer(short enterNumber = 0){
       cB.intrestingFact();
       break;
       }
+**/
+    case 4:{
+      cashCounter cC;
+      cC.cashier();
+      break;
+      }
     default:{
       cout << "Wrong Number Input : " << getEnteredNumber << endl;
       break;
@@ -48,6 +58,7 @@ void wantContinue(char option = 'n'){
       ask();
     }
     else{
+      cout << "Thankyou for using, Take Care BYE!." << endl;
       exit(0);
     }
 }
@@ -60,6 +71,7 @@ void ask(){
   cout << "1: Disp" << endl;
   cout << "2: Dollar Exchange and Rupees Exchange" << endl;
   cout << "3: Calculate" << endl;
+  cout << "4: Cash Counter" << endl;
   cout << endl;
   cin >> choose; executer(choose);
   cout << "Do you want to continue?:"; cin >> print; wantContinue(print);
